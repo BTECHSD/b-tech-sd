@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTECH ServiceDesk Ltd</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo-container">
+                <div class="hamburger-menu" id="menuToggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <img src="Logo/BTECH%20Logo.png" alt="BTECH Logo" class="logo">
+            </div>
+
+            <h1 class="site-title"><a href="index.html">BTECH ServiceDesk Ltd</a></h1>
+
+            <nav class="menu hidden" id="mainNav">
+                <ul>
+                    <li id="menu-home"><a href="index.html">Home</a></li>
+                    <li id="menu-services"><a href="services.html">Services</a></li>
+                    <li id="menu-about"><a href="about.html">About</a></li>
+                    <li id="menu-contact"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main role="main">
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have questions or need more information? We're here to help!</p>
+                <p>You can also contact us if you want to work with us! Please add your CV and Certifications.</p>
+
+                <form id="contact-form" action="submit.php" method="post" enctype="multipart/form-data">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first">First Name:</label>
+                            <input type="text" id="first" name="first" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="family">Family Name:</label>
+                            <input type="text" id="family" name="family" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone number:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="file_upload">Upload CV or other documents:</label>
+                        <input type="file" id="file_upload" name="file_upload[]" multiple>
+                        <small class="file-instructions">You can select multiple files. Accepted formats: PDF, DOC, DOCX (Max size: 5MB per file)</small>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="privacy_agree" name="privacy_agree" required>
+                        <label for="privacy_agree">
+                            I agree to the <a href="#" id="privacy-policy-link">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="contact-info">
+                <p>Email: <a href="mailto:btechservicedesk@gmail.com">btechservicedesk@gmail.com</a></p>
+                <p>WhatsApp: <a href="https://wa.me/905383716682">+90 538 371 66 82</a></p>
+                <p>71-75 Shelton Street, Covent Garden, London, WC2H 9JQ</p>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="facebook/face logo.jpeg" alt="Facebook" class="social-icon"></a>
+                <a href="https://www.linkedin.com/company/btech-servicedesk-ltd/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer"><img src="linkedin/LinkedIn_logo_initials.png" alt="LinkedIn" class="social-icon"></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="discord/Discord logo.png" alt="Discord" class="social-icon"></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="instagram/10900022.png" alt="Instagram" class="social-icon"></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="tiktok/194.jpg" alt="TikTok" class="social-icon"></a>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2024 BTECH ServiceDesk Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="site-scripts.js.js"></script>
+    </body>
+</html>
