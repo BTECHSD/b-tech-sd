@@ -74,4 +74,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 } else {
     echo "There was a problem with your submission, please try again.";
-}
